@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+.venv/
+.vscode/
+_nao_usados/
+dist/
+build/
+.venv-win/
+*.spec

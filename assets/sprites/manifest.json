@@ -1,0 +1,319 @@
+{
+  "px_por_unidade": 96.0,
+  "tile_px": [
+    96.0,
+    68.0
+  ],
+  "projecao": {
+    "camera": "34",
+    "gx": [
+      96.0,
+      0.0
+    ],
+    "gy": [
+      0.0,
+      68.0
+    ],
+    "profundidade": [
+      0.0,
+      1.0
+    ],
+    "nota": "tela = origem + gx * projecao.gx + gy * projecao.gy; desenhe em ordem crescente de gx * profundidade[0] + gy * profundidade[1]"
+  },
+  "objeto": {
+    "tamanho": [
+      174,
+      166
+    ],
+    "ancora": [
+      87,
+      117
+    ],
+    "nota": "ancora = pixel que fica no centro do tile, no chao (vale para cobra, comida, props, cercas e sombra)"
+  },
+  "tile": {
+    "tamanho": [
+      98,
+      88
+    ],
+    "ancora": [
+      49,
+      34
+    ],
+    "nota": "ancora = centro da face de cima"
+  },
+  "cerca": {
+    "pecas": [
+      "reta_x",
+      "reta_y",
+      "canto_ES",
+      "canto_WS",
+      "canto_EN",
+      "canto_WN",
+      "poste"
+    ],
+    "arquivo": "<tema>/cerca_<peca>.png",
+    "nota": "cada peca ocupa uma celula; os bracos vao do centro ate a borda da celula"
+  },
+  "direcoes": {
+    "E": "+gx (direita)",
+    "S": "+gy (baixo)",
+    "W": "-gx (esquerda)",
+    "N": "-gy (cima)"
+  },
+  "temas": {
+    "classico": {
+      "fundo": "#a9dcf2"
+    },
+    "rosa": {
+      "fundo": "#ffe1ea"
+    },
+    "rosquinha": {
+      "fundo": "#fbe3f4"
+    },
+    "esquilo": {
+      "fundo": "#f2dcb8"
+    },
+    "caracol": {
+      "fundo": "#c8d3f0"
+    },
+    "coracao": {
+      "fundo": "#3d1a52"
+    },
+    "caixa": {
+      "fundo": "#e9ddff"
+    },
+    "queimado": {
+      "fundo": "#57504d"
+    }
+  },
+  "comida_para_tema": {
+    "rosa": "rosa",
+    "rosquinha": "rosquinha",
+    "esquilo": "esquilo",
+    "caracol": "caracol",
+    "coracao": "coracao",
+    "maca": "classico",
+    "maca_bronze": "classico",
+    "maca_prata": "classico",
+    "maca_ouro": "classico",
+    "maca_platina": "classico",
+    "maca_esmeralda": "classico",
+    "maca_diamante": "classico",
+    "maca_mestre": "classico"
+  },
+  "skins": {
+    "lista": [
+      "classica",
+      "ferro",
+      "bronze",
+      "prata",
+      "ouro",
+      "platina",
+      "esmeralda",
+      "diamante",
+      "mestre"
+    ],
+    "arquivo": "skins/<skin>/<peca>.png"
+  },
+  "bomba": {
+    "arquivo": "comidas/bomba.png",
+    "tema": "queimado"
+  },
+  "ui": {
+    "placar": {
+      "tamanho": [
+        580,
+        250
+      ],
+      "ancora": [
+        290,
+        125
+      ],
+      "area": [
+        80,
+        80,
+        420,
+        90
+      ],
+      "arquivo": "<tema>/ui_placar.png"
+    },
+    "placar_aberto": {
+      "tamanho": [
+        960,
+        250
+      ],
+      "ancora": [
+        480,
+        125
+      ],
+      "area": [
+        80,
+        80,
+        800,
+        90
+      ],
+      "arquivo": "<tema>/ui_placar_aberto.png"
+    },
+    "fim": {
+      "tamanho": [
+        760,
+        580
+      ],
+      "ancora": [
+        380,
+        290
+      ],
+      "area": [
+        80,
+        80,
+        600,
+        420
+      ],
+      "arquivo": "<tema>/ui_fim.png"
+    },
+    "cores": {
+      "classico": {
+        "texto": "#3b2a1a",
+        "destaque": "#2f8a2f"
+      },
+      "rosa": {
+        "texto": "#7a1f3d",
+        "destaque": "#e0306a"
+      },
+      "rosquinha": {
+        "texto": "#6b3a1f",
+        "destaque": "#e0559c"
+      },
+      "dino": {
+        "texto": "#3e2414",
+        "destaque": "#d9531a"
+      },
+      "caracol": {
+        "texto": "#2d3a66",
+        "destaque": "#6a4bd1"
+      },
+      "queimado": {
+        "texto": "#2b2523",
+        "destaque": "#e0561b"
+      }
+    },
+    "nota": "area = retangulo (x, y, largura, altura) do miolo claro, onde o jogo escreve os textos"
+  },
+  "ranque": {
+    "ligas": [
+      "ferro",
+      "bronze",
+      "prata",
+      "ouro",
+      "platina",
+      "esmeralda",
+      "diamante",
+      "mestre"
+    ],
+    "arquivo": "ranque/escudo_<liga>.png",
+    "tamanho": [
+      380,
+      280
+    ],
+    "centro": [
+      190,
+      160
+    ],
+    "nota": "centro = pixel do meio do escudo"
+  },
+  "personagem": {
+    "placa": {
+      "centro": [
+        68.0,
+        31.9
+      ],
+      "tamanho": [
+        124.8,
+        51.6
+      ]
+    },
+    "poses": [
+      "parado",
+      "segura",
+      "prepara",
+      "joga",
+      "placa"
+    ],
+    "arquivo": "personagem/<pose>.png",
+    "tamanho": [
+      136,
+      187
+    ],
+    "ancora": [
+      68,
+      164
+    ],
+    "mao": {
+      "parado": [
+        51.8,
+        148.6
+      ],
+      "segura": [
+        80.3,
+        131.2
+      ],
+      "prepara": [
+        25.8,
+        71.2
+      ],
+      "joga": [
+        93.0,
+        107.9
+      ]
+    },
+    "nota": "ancora = pé no chão (centro da célula); mao = onde o jogo desenha o presente em cada pose"
+  },
+  "personagem_mal": {
+    "placa": {
+      "centro": [
+        68.0,
+        37.9
+      ],
+      "tamanho": [
+        124.8,
+        51.6
+      ]
+    },
+    "poses": [
+      "parado",
+      "segura",
+      "prepara",
+      "joga",
+      "placa"
+    ],
+    "arquivo": "personagem/mal_<pose>.png",
+    "tamanho": [
+      136,
+      193
+    ],
+    "ancora": [
+      68,
+      170
+    ],
+    "mao": {
+      "parado": [
+        84.2,
+        154.6
+      ],
+      "segura": [
+        55.7,
+        137.2
+      ],
+      "prepara": [
+        110.2,
+        77.2
+      ],
+      "joga": [
+        43.0,
+        113.9
+      ]
+    },
+    "nota": "ancora = pé no chão (centro da célula); mao = onde o jogo desenha o presente em cada pose"
+  }
+}

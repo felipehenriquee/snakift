@@ -1,0 +1,3 @@
+# modo live do TikTok (opcional): o jogo funciona sem, só não conecta na live
+-r requirements.txt
+TikTokLive>=7.0
